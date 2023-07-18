@@ -1,0 +1,8 @@
+# node and composer directories
+/node_modules
+/vendor
+
+# generated styles and scripts
+/templates/**/*.js
+/templates/**/*.css
+/templates/**/*.map

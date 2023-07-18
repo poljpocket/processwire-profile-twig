@@ -1,0 +1,24 @@
+{
+  "name": "fruitcake-processwire-default-twig",
+  "type": "module",
+  "version": "1.0.3",
+  "scripts": {
+    "css": "sass templates/styles/main.scss:./templates/styles/main-compiled.css",
+    "css-prod": "sass --style compressed --no-source-map templates/styles/main.scss:./templates/styles/main-compiled.css",
+    "js": "rollup -c rollup.config.es6",
+    "js-prod": "MINIFY=on rollup -c rollup.config.es6",
+    "build": "npm run clean && npm run css-prod && npm run js-prod",
+    "clean": "rm -f templates/scripts/main-compiled.js ./templates/scripts/main-compiled.js.map ./templates/styles/main-compiled.css ./templates/styles/main-compiled.css.map"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-json": "latest",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@rollup/plugin-terser": "^0.4.1",
+    "@types/jquery": "~3.5",
+    "jquery": "~3.5",
+    "modern-css-reset": "^1.4.0",
+    "rollup": "^2.79.1",
+    "sass": "^1.62.0"
+  }
+}

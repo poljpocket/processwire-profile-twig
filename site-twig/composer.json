@@ -1,0 +1,15 @@
+{
+  "name": "fruitcake/processwire-default-twig",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Julian Pollak",
+      "email": "j.pollak@fruitcake.ch"
+    }
+  ],
+  "require": {
+    "twig/twig": "v3.6.0"
+  }
+}
