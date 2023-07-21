@@ -17,7 +17,7 @@ use Twig\Error\SyntaxError;
 
 $twigTemplateFile = $twigTemplateName . '.html.twig';
 
-$twigTemplate = file_exists($config->get('twigDirectory') . $twigTemplateFile) ? $twigTemplateFile : 'index.html.twig';
+$twigTemplate = file_exists($config->get('twigDirectory') . $twigTemplateFile) ? $twigTemplateFile : '_base.html.twig';
 
 try {
     echo $twigEnvironment->render($twigTemplate, $twigData);
